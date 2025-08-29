@@ -1,0 +1,217 @@
+
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9fc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #00bcd4, #0097a7);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #007c91;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #007c91;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .about img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #00bcd4;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: white;
+      border: 2px solid #00bcd4;
+      padding: 15px 25px;
+      border-radius: 12px;
+      text-align: center;
+      flex: 1 1 150px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 188, 212, 0.3);
+    }
+
+    .skill i {
+      font-size: 2rem;
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    /* Projects & Certifications */
+    .project, .certification {
+      background: white;
+      border-left: 5px solid #00bcd4;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover, .certification:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 15px rgba(0, 188, 212, 0.3);
+    }
+
+    /* Contact */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #007c91;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #ff9800;
+    }
+
+    /* Resume Button */
+    .resume-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #00bcd4;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .resume-btn i {
+      margin-right: 8px;
+    }
+
+    .resume-btn:hover {
+      background: #0097a7;
+      box-shadow: 0 0 20px #00e5ff, 0 0 40px #00e5ff;
+      transform: scale(1.05);
+    }
+
+    /* Back to Top */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #00bcd4;
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+    }
+
+    #backToTop.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    #backToTop:hover {
+      background: #0097a7;
+      box-shadow: 0 0 20px #00e5ff, 0 0 40px #00e5ff;
+      transform: scale(1.1);
+    }
+
+    footer {
+      background: #007c91;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
